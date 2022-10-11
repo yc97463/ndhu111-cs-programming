@@ -2,13 +2,19 @@
 
 int main()
 {
-  int a, b;
+  int a, b, d, n = 0;
   char c[] = "";
-  int d;
   while (1)
   {
+    if (feof(stdin))
+    {
+      break;
+    }
+    if (n != 0)
+    {
+      printf("\n");
+    };
     scanf("%d%d%s", &a, &b, c);
-    // printf("%d %d %s\n", a, b, c);
     switch (a)
     {
     case 1:
@@ -47,11 +53,7 @@ int main()
       }
       break;
     }
-    printf("\n");
-    if (feof(stdin))
-    {
-      break;
-    }
+    n += 1;
   }
   return 0;
 }
