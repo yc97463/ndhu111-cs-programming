@@ -1,2 +1,4 @@
 *.dSYM/*
 *.out
+sandbox/*
+.DS_Store
